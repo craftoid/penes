@@ -1,25 +1,19 @@
 
-/**
- * Tutorial implementing a basic genetic algorithm.
- * The problem consists in finding a vector full of zeros or ones.
- * 
- * @author Luigi Troiano
- * @version 2.0
- * @since 1.0
- */
+// Tutorial implementing a basic genetic algorithm.
+// The problem consists in finding a vector full of zeros or ones.
+
+// See >>> http://jenes.intelligentia.it/tutorials/tutorial1
 
 import jenes.*;
+import jenes.algorithms.*;
+import jenes.chromosome.*;
 import jenes.population.*;
 import jenes.stage.*;
-import jenes.performance.*;
-import jenes.statistics.*;
-import jenes.utils.*;
-import jenes.chromosome.codings.*;
 import jenes.stage.operator.*;
 import jenes.stage.operator.common.*;
-import jenes.chromosome.*;
-import jenes.utils.multitasking.*;
-import jenes.algorithms.*;
+import jenes.statistics.*;
+import jenes.tutorials.utils.*;
+import jenes.utils.*;
 
 
 int POPULATION_SIZE=50;
@@ -83,5 +77,8 @@ void setup() {
   println("found in " + algostats.getExecutionTime() + " ms" );
 
   Utils.printStatistics(stats);
+  
+  exit();
+   
 }
 
